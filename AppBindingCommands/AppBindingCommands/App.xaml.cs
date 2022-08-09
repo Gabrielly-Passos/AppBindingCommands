@@ -19,17 +19,20 @@ namespace AppBindingCommands
 
         protected override void OnStart()//Todo aplicativo programado tem os três( OnStart, Onsleep e OnReseume) serve OnStart Inicializa o app
         {
-
+            Application.Current.Properties["AcaoStart"] =
+            string.Format(" * App iniciado às {0}. \n", DateTime.Now);
         }
 
         protected override void OnSleep()//Segundo plano do app, onde se calcula o tempo para expiração 
         {
-
+            Application.Current.Properties["AcaoSleep"] =
+            string.Format(" * App em segundo plano às {0}. \n", DateTime.Now);
         }
 
         protected override void OnResume()//Retorna ao app dando continuidade
         {
-
+            Application.Current.Properties["AcaoResume"] =
+            string.Format(" * App reativado às {0}. \n", DateTime.Now);
         }
     }
 }
