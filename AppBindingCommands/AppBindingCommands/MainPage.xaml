@@ -4,14 +4,15 @@
              x:Class="AppBindingCommands.MainPage">
 
     <StackLayout>
-        <Frame BackgroundColor="#B39CD0" Padding="20" CornerRadius="0">
-            <Label Text="AppBindingCommands" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        <Frame BackgroundColor="#9B89B3" Padding="20" CornerRadius="0">
+            <Label Text="Comandos Binding" HorizontalTextAlignment="Center" TextColor="White" FontSize="30"/>
+
         </Frame>
-       
-        
+
+        <Label Text="Seja Bem Vindo ao APP" FontSize="Title" HorizontalTextAlignment="Center"/>
+
         <Label x:Name="lblInformacoes" Text="" />
-        <Button x:Name="btnAtualizarInfo"  Text="Atualizar Informações" Clicked="btnAtualizarInfo_Clicked" CornerRadius="300"  BackgroundColor="#B39CD0" TextColor="White"  />
+        <Button x:Name="btnAtualizarInfo"  Text="Atualizar Informações" Clicked="btnAtualizarInfo_Clicked" CornerRadius="300"  BackgroundColor="#9B89B3" TextColor="White"  />
 
     </StackLayout>
-
 </ContentPage>
