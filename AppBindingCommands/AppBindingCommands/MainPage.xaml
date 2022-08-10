@@ -11,8 +11,14 @@
 
         <Label Text="Seja Bem Vindo ao APP" FontSize="Title" HorizontalTextAlignment="Center"/>
 
+        <Entry Text="{Binding Name}" Placeholder="Enter Name" />
+        <Label Text="{Binding DisplayName}" />
+    
+
         <Label x:Name="lblInformacoes" Text="" />
         <Button x:Name="btnAtualizarInfo"  Text="Atualizar Informações" Clicked="btnAtualizarInfo_Clicked" CornerRadius="300"  BackgroundColor="#9B89B3" TextColor="White"  />
+
+
 
     </StackLayout>
 </ContentPage>
