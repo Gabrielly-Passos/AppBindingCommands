@@ -13,6 +13,8 @@ namespace AppBindingCommands
         public MainPage()
         {
             InitializeComponent();
+
+            BindingContext = new MainPageViewModel(); //Etapa Intermediária que usará o contexto de carregamento da view, sendo assim estamos vinculando os arquivos
         }
 
         private void btnAtualizarInfo_Clicked(object sender, EventArgs e)
