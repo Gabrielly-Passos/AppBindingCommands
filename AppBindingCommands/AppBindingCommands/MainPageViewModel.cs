@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
+using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace AppBindingCommands
 {
@@ -13,6 +15,8 @@ namespace AppBindingCommands
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
+
+        public ICommand ShowMessageCommand;//Declara os botões na classe.
 
         private string name = string.Empty;//CTRL + R + E
 
@@ -47,5 +51,78 @@ namespace AppBindingCommands
 
 
         }
+
+        public void ShowMessage()//Vincula ao metódo 
+        {
+            string dataProperty = Application.Current.Properties["dtAtual"].ToString();
+
+            DisplayMessage = $"Boa noite {Name}. Hoje é {dataProperty}";
+
+        }
+
+        public MainPageViewModel()
+        {
+            ShowMessageCommand = new Command (ShowMessage);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
