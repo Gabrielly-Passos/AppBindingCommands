@@ -11,6 +11,13 @@
 
         <Label Text="Seja Bem Vindo ao APP" FontSize="Title" HorizontalTextAlignment="Center"/>
 
+
+        <Button Command="{Binding CleanCommand}" Text="Limpar Campos"/>
+
+        <Button Command="{Binding OptionCommand}" Text="Exibir Opções"/>
+
+        <Button Command="{Binding countCommand}" Text="Contar Caracteres"/>
+
          <Label Text="{Binding DisplayMessage}" HorizontalOptions ="CenterAndExpand" VerticalOptions="CenterAndExpand" />
          <Button Command="{Binding ShowMessageCommand}" Text="Mensagem"/>       
         
@@ -19,7 +26,7 @@
     
 
         <Label x:Name="lblInformacoes" Text="" />
-        <Button x:Name="btnAtualizarInfo"  Text="Atualizar Informações" Clicked="btnAtualizarInfo_Clicked" CornerRadius="300"  BackgroundColor="#9B89B3" TextColor="White"  />
+        <Button x:Name="btnAtualizarInfo"  Text="Atualizar Informações" Clicked="btnAtualizarInfo_Clicked"  BackgroundColor="#9B89B3" TextColor="White"  />
 
 
 
