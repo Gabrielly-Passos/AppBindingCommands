@@ -17,7 +17,7 @@ namespace AppBindingCommands
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
 
-        public ICommand ShowMessageCommand;//Declara os botões na classe.
+        public ICommand ShowMessageCommand { get; }//Declara os botões na classe.
 
         private string name = string.Empty;//CTRL + R + E
 
@@ -78,7 +78,7 @@ namespace AppBindingCommands
                  string.Format("Seu nome tem {0} Letras", name.Length);
 
             await Application.Current.MainPage
-                .DisplayAlert("Informação", "Limpeza realizada com sucesso", "Ok");
+                .DisplayAlert("Informação", nameLength , "Ok");
 
 
         }
