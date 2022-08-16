@@ -11,6 +11,9 @@
 
         <Label Text="Seja Bem Vindo ao APP" FontSize="Title" HorizontalTextAlignment="Center"/>
 
+         <Label Text="{Binding DisplayMessage}" HorizontalOptions ="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+         <Button Command="{Binding ShowMessageCommand}" Text="Mensagem"/>       
+        
         <Entry Text="{Binding Name}" Placeholder="Enter Name" />
         <Label Text="{Binding DisplayName}" />
     
